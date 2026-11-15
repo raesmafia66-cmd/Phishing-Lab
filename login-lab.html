@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raes Security Lab</title>
+<title>RAES SECURITY LAB</title>
+
 <style>
 body {
     background: #101010;
     color: white;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align: center;
     padding: 40px 15px;
 }
@@ -25,6 +26,7 @@ input, button {
     margin: 10px;
     border-radius: 6px;
     border: none;
+    box-sizing: border-box;
 }
 button {
     background: #777;
@@ -36,5 +38,29 @@ button {
 }
 </style>
 </head>
+
 <body>
-<div class="
+<div class="box">
+<h2>RAES SECURITY LAB</h2>
+<p>Educational Login Simulation</p>
+
+<form id="labForm">
+<input type="text" placeholder="Test Username" required>
+<input type="password" placeholder="Test Password" required>
+<button type="submit">Run Simulation</button>
+</form>
+
+<p id="result"></p>
+</div>
+
+<script>
+document.getElementById("labForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("result").textContent =
+    "Simulation successful! No credentials collected or stored.";
+    this.reset();
+});
+</script>
+
+</body>
+</html>
