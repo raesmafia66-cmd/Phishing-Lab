@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phishing Awareness Lab</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #101820;
-            color: white;
-            text-align: center;
-            padding: 40px 15px;
-        }
-        .box {
-            max-width: 420px;
-            margin: 50px auto;
-            padding: 25px;
-            background: #202c39;
-            border-radius: 15px;
-        }
-        h1 { color: #70d6ff; }
-        button {
-            padding: 12px 25px;
-            background: #70d6ff;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        #result {
-            margin-top: 20px;
-            color: #80ed99;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing Training Lab</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+.box {
+  background: #202d40;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 380px;
+  margin: 40px auto;
+}
+input {
+  padding: 12px;
+  width: 85%;
+  margin: 10px;
+}
+button {
+  padding: 12px 25px;
+  background: #16a085;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+#result {
+  color: #70e0b0;
+  margin-top: 20px;
+}
+</style>
 </head>
 <body>
-    <div class="box">
-        <h1>Phishing Awareness Lab</h1>
-        <p>Welcome to our cybersecurity training laboratory.</p>
-        <p>This is a safe educational simulation.</p>
-        <button onclick="showMessage()">Start Learning</button>
-        <p id="result"></p>
-    </div>
 
-    <script>
-        function showMessage() {
-            document.getElementById("result").innerText =
-            "Training started! Never enter your password on suspicious links.";
-        }
-    </script>
+<h1>Cybersecurity Training Lab</h1>
+
+<div class="box">
+<h2>Demo Login Page</h2>
+<p>Educational simulation only</p>
+
+<input type="text" placeholder="Demo username">
+<br>
+<input type="password" placeholder="Demo password">
+<br>
+<button onclick="showMessage()">Test Simulation</button>
+
+<p id="result"></p>
+</div>
+
+<script>
+function showMessage() {
+  document.getElementById("result").innerHTML =
+  "Training simulation! Never enter real passwords on suspicious pages.";
+}
+</script>
+
 </body>
 </html>
