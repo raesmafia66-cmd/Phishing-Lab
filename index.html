@@ -3,61 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phishing Training Lab</title>
+<title>Social Login Training Lab</title>
+
 <style>
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background: #101827;
-  color: white;
+  background: #f0f2f5;
+}
+
+.notice {
+  background: #fff3cd;
+  color: #664d03;
   text-align: center;
-  padding: 30px;
-}
-.box {
-  background: #202d40;
-  padding: 25px;
-  border-radius: 15px;
-  max-width: 380px;
-  margin: 40px auto;
-}
-input {
   padding: 12px;
-  width: 85%;
-  margin: 10px;
+  font-weight: bold;
 }
+
+.container {
+  max-width: 380px;
+  margin: 70px auto;
+  padding: 25px;
+  text-align: center;
+}
+
+.logo {
+  color: #1877f2;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #ccc;
+}
+
+input {
+  width: 90%;
+  padding: 14px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
 button {
-  padding: 12px 25px;
-  background: #16a085;
+  width: 100%;
+  padding: 13px;
+  background: #1877f2;
   color: white;
   border: none;
   border-radius: 6px;
+  font-size: 17px;
 }
+
 #result {
-  color: #70e0b0;
-  margin-top: 20px;
+  color: #187744;
+  font-weight: bold;
+  margin-top: 15px;
 }
 </style>
 </head>
+
 <body>
 
-<h1>Cybersecurity Training Lab</h1>
+<div class="notice">
+EDUCATIONAL SIMULATION ONLY — NOT FACEBOOK
+</div>
 
-<div class="box">
-<h2>Demo Login Page</h2>
-<p>Educational simulation only</p>
+<div class="container">
 
-<input type="text" placeholder="Demo username">
-<br>
-<input type="password" placeholder="Demo password">
-<br>
-<button onclick="showMessage()">Test Simulation</button>
+<div class="logo">Social Lab</div>
+
+<p>Social Network Login Demonstration</p>
+
+<div class="card">
+
+<h3>Demo Login</h3>
+
+<input type="text"
+placeholder="Fake demo username"
+autocomplete="off">
+
+<input type="text"
+placeholder="Fake demo password"
+autocomplete="off">
+
+<button onclick="showMessage()">
+Test Simulation
+</button>
 
 <p id="result"></p>
+
+</div>
 </div>
 
 <script>
 function showMessage() {
-  document.getElementById("result").innerHTML =
-  "Training simulation! Never enter real passwords on suspicious pages.";
+ document.getElementById("result").innerText =
+ "Simulation successful! No information was collected or sent.";
 }
 </script>
 
